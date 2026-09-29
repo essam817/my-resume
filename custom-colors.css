@@ -55,3 +55,10 @@ input[type="text"], input[type="email"], textarea {
     border: 1px solid #CBD5E1 !important;
     color: #1E293B !important;
 }
+css
+/* --- Banner Area Clean-up Override --- */
+#banner, #banner::before, #banner::after {
+    background-color: #F8FAFC !important;
+    background-image: none !important;
+    opacity: 1 !important;
+}
