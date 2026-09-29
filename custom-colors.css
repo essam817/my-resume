@@ -55,9 +55,47 @@ input[type="text"], input[type="email"], textarea {
     border: 1px solid #CBD5E1 !important;
     color: #1E293B !important;
 }
-/* --- Banner Area Clean-up Override --- */
-#banner, #banner::before, #banner::after {
-    background-color: #F8FAFC !important;
-    background-image: none !important;
-    opacity: 1 !important;
+/* ==========================================================================
+   HYBRID BRAND BANNER: SALES, HOSPITALITY, & COMPUTER SCIENCE
+   ========================================================================== */
+
+section#welcome, 
+#banner {
+    background-image: url('https://unsplash.com') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position: relative !important;
+    overflow: hidden !important;
+    padding: 6em 3em !important; /* Adds professional padding around your name */
+}
+
+/* Authoritative navy semi-transparent mask to ensure extreme text readability */
+section#welcome::before,
+#banner::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(30, 58, 138, 0.7)) !important;
+    z-index: 1 !important;
+}
+
+/* Safely elevates your name, title typography, and location above the image layers */
+#welcome .container, 
+#welcome h1, 
+#welcome p,
+#welcome strong,
+#welcome .actions {
+    position: relative !important;
+    z-index: 2 !important;
+    color: #FFFFFF !important;
+}
+
+/* Subtle glowing treatment to highlight your location pin and subheaders */
+#welcome p {
+    color: #E2E8F0 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
 }
