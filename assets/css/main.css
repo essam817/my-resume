@@ -1,3 +1,75 @@
+css
+/* ==========================================================================
+   EXECUTIVE PALETTE INJECTION FOR "READ ONLY" TEMPLATE
+   ========================================================================== */
+
+:root {
+  --content-bg: #F8FAFC;       /* Soft slate tint background */
+  --sidebar-bg: #0F172A;       /* Deep federal navy sidebar background */
+  --sidebar-text: #E2E8F0;     /* Crisp silver for navigation text */
+  --text-dark: #1E293B;        /* Sharp charcoal for primary paragraph text */
+  --headings-dark: #0F172A;    /* Dark slate blue for section titles */
+  --accent-cta: #D97706;       /* High-contrast amber gold for actions */
+  --accent-hover: #B45309;     /* Deep gold shadow transition */
+}
+
+/* --- Global Background Override --- */
+body, #page-wrapper {
+  background-color: var(--content-bg) !important;
+}
+
+/* --- Left Profile/Sidebar Navigation Panel --- */
+#header {
+  background-color: var(--sidebar-bg) !important;
+  color: var(--sidebar-text) !important;
+}
+#header h1, #header h1 a, #header p {
+  color: var(--sidebar-text) !important;
+}
+#header nav ul li a.active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #FFFFFF !important;
+  border-right: 4px solid var(--accent-cta) !important;
+}
+
+/* --- Right Side Core Content Area --- */
+#wrapper {
+  background-color: var(--content-bg) !important;
+}
+#main section {
+  background-color: #FFFFFF !important; /* White content card grids */
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+h1, h2, h3, h4, h5, h6, strong {
+  color: var(--headings-dark) !important;
+}
+p, li {
+  color: var(--text-dark) !important;
+}
+
+/* --- Form Contact Buttons & Interactive Elements --- */
+input[type="submit"], 
+input[type="button"], 
+.button.primary {
+  background-color: var(--accent-cta) !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+  border: none !important;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover, 
+input[type="button"]:hover, 
+.button.primary:hover {
+  background-color: var(--accent-hover) !important;
+  color: #FFFFFF !important;
+}
+
+/* Contact block container fields */
+input[type="text"], input[type="email"], textarea {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  color: var(--text-dark) !important;
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
