@@ -1,0 +1,50 @@
+css
+/* ==========================================================================
+   SAFE COLOR INJECTION: EXEC PALETTE FOR READ ONLY TEMPLATE
+   ========================================================================== */
+
+/* 1. Content Area Background Overrides */
+body, #page-wrapper, #wrapper {
+    background-color: #F8FAFC !important;
+}
+#main section {
+    background-color: #FFFFFF !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+/* 2. Left Header Sidebar Panel */
+#header {
+    background-color: #0F172A !important;
+    color: #E2E8F0 !important;
+}
+#header h1, #header h1 a, #header p {
+    color: #E2E8F0 !important;
+}
+#header nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #FFFFFF !important;
+    border-right: 4px solid #D97706 !important;
+}
+
+/* 3. Text and Headings Typography */
+h1, h2, h3, h4, h5, h6, strong {
+    color: #0F172A !important;
+}
+p, li {
+    color: #1E293B !important;
+}
+
+/* 4. Action Buttons & Form Controls */
+input[type="submit"], input[type="button"], .button.primary {
+    background-color: #D97706 !important;
+    color: #FFFFFF !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+input[type="submit"]:hover, input[type="button"]:hover, .button.primary:hover {
+    background-color: #B45309 !important;
+}
+input[type="text"], input[type="email"], textarea {
+    background: #FFFFFF !important;
+    border: 1px solid #CBD5E1 !important;
+    color: #1E293B !important;
